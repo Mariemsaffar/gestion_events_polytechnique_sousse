@@ -1,0 +1,12 @@
+{% if form.submitted and form.valid %}
+    
+    <h2>Form Submission Results</h2>
+    <p>Name: {{ form.vars.data.id }}</p>
+    <p>Email: {{ form.vars.data.libelle }}</p>
+    <p>Message: {{ form.vars.data.date }}</p>
+    <p>Email: {{ form.vars.data.heure }}</p>
+    <p>Message: {{ form.vars.data.club }}</p>
+    <p>Message: {{ form.vars.data.description }}</p>
+     <p>Message: {{ form.vars.data.image }}</p>
+
+{% endif %}

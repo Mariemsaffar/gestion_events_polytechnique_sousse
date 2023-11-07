@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Ajouter un Evenement
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+
+		<h1 class="mt-4">Création d'un évenement</h1>
+		{% form_theme form 'bootstrap_5_layout.html.twig' %}
+
+		{{ form_start(form) }}
+			{{form(form)}}
+		{{form_end(form)}}
+		
+			<a href="{{path('app_home')}}" class="btn btn-primary">
+				Ajouter
+			</a>
+	</div>
+{% endblock %}
